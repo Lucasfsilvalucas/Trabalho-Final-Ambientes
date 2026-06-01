@@ -50,9 +50,3 @@ cd frontend
 npm install
 npm test
 ```
-
-## GitHub
-
-Depois de subir para o GitHub, convide o professor pelo caminho:
-
-Settings > Collaborators > Add people > regis.simao@unifor.br
