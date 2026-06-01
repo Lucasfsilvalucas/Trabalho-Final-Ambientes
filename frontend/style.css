@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f2f5f7;
+  background: #eef2f7;
   color: #1f2937;
 }
 
@@ -16,10 +16,14 @@ body {
 
 .card {
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 24px;
   margin-bottom: 20px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.hero {
+  text-align: center;
 }
 
 h1,
@@ -29,21 +33,34 @@ h2 {
 
 .subtitle {
   color: #4b5563;
+  margin-bottom: 0;
 }
 
 label {
   display: block;
-  margin-top: 12px;
+  margin-top: 14px;
   margin-bottom: 6px;
   font-weight: 700;
 }
 
-input {
+input,
+textarea {
   width: 100%;
-  padding: 10px;
+  padding: 11px;
   border: 1px solid #cbd5e1;
   border-radius: 8px;
   font-size: 16px;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 button {
@@ -61,6 +78,14 @@ button:hover {
   background: #1d4ed8;
 }
 
+button.secondary {
+  background: #64748b;
+}
+
+button.secondary:hover {
+  background: #475569;
+}
+
 .message {
   min-height: 20px;
   color: #047857;
@@ -68,8 +93,23 @@ button:hover {
 }
 
 .profile-box {
-  padding: 16px;
+  padding: 18px;
   border: 1px solid #cbd5e1;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #f8fafc;
+}
+
+.profile-name {
+  font-size: 24px;
+  margin: 0 0 6px;
+}
+
+.profile-email {
+  color: #2563eb;
+  margin-top: 0;
+}
+
+.profile-summary {
+  line-height: 1.6;
+  white-space: pre-wrap;
 }

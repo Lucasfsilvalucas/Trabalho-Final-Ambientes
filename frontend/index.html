@@ -3,46 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App Social</title>
+  <title>App Social - Perfil</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="container">
-    <section class="card">
+    <section class="card hero">
       <h1>App Social</h1>
-      <p class="subtitle">Aplicação com frontend, backend ExpressJS, Cypress e GitHub Actions.</p>
+      <p class="subtitle">Crie uma página de perfil simples com nome, e-mail e um resumo pessoal.</p>
     </section>
 
     <section class="card">
-      <h2>Cadastrar perfil</h2>
-      <label for="regName">Nome</label>
-      <input id="regName" placeholder="Nome">
+      <h2>Editar perfil</h2>
 
-      <label for="regEmail">Email</label>
-      <input id="regEmail" placeholder="Email">
+      <label for="nameInput">Nome</label>
+      <input id="nameInput" placeholder="Digite seu nome">
 
-      <button id="registerBtn">Cadastrar</button>
-      <p id="registerMessage" class="message"></p>
+      <label for="emailInput">Email</label>
+      <input id="emailInput" type="email" placeholder="Digite seu email">
+
+      <label for="summaryInput">Resumo / post pessoal</label>
+      <textarea id="summaryInput" rows="6" placeholder="Escreva um resumo sobre você, seus interesses ou uma apresentação pessoal."></textarea>
+
+      <div class="actions">
+        <button id="saveBtn">Salvar perfil</button>
+        <button id="clearBtn" class="secondary">Limpar</button>
+      </div>
+
+      <p id="message" class="message"></p>
     </section>
 
-    <section class="card">
-      <h2>Buscar perfil</h2>
-      <label for="profileId">ID do perfil</label>
-      <input id="profileId" type="number" value="1">
-      <button id="loadBtn">Carregar perfil</button>
-    </section>
-
-    <section class="card">
-      <h2>Perfil</h2>
-      <div id="profile" class="profile-box">Nenhum perfil carregado.</div>
-
-      <label for="newName">Novo nome</label>
-      <input id="newName" placeholder="Novo nome">
-      <button id="updateBtn">Atualizar</button>
-      <p id="updateMessage" class="message"></p>
+    <section class="card profile-card">
+      <h2>Prévia do perfil</h2>
+      <div id="profilePreview" class="profile-box">
+        <p>Nenhum perfil preenchido ainda.</p>
+      </div>
     </section>
   </main>
 
-  <script type="module" src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

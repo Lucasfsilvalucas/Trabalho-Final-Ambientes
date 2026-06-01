@@ -1,17 +1,29 @@
-# App Social
+# App Social - Perfil
 
-Aplicação web com frontend em HTML, CSS e JavaScript, backend em JavaScript com ExpressJS, testes automatizados com Cypress e workflows do GitHub Actions.
+Aplicação web simples com frontend em HTML, CSS e JavaScript, backend em JavaScript com ExpressJS, testes automatizados com Cypress e workflows do GitHub Actions.
+
+A aplicação não usa banco de dados. O frontend salva o perfil no `localStorage` do navegador e o backend Express mantém um perfil apenas em memória enquanto o servidor está rodando.
+
+## Funcionalidades
+
+- Criar uma página de perfil.
+- Informar nome, email e um resumo/post pessoal.
+- Visualizar a prévia do perfil na tela.
+- Limpar o perfil salvo no navegador.
+- Backend ExpressJS sem banco de dados.
+- Testes Cypress para frontend e backend.
+- Workflows GitHub Actions para frontend e backend.
 
 ## Estrutura
 
 ```txt
 app-social-pronto/
 ├── frontend/              # HTML, CSS, JS e testes Cypress do frontend
-├── backend/               # ExpressJS e testes Cypress do backend
+├── backend/               # ExpressJS sem banco e testes Cypress do backend
 └── .github/workflows/     # Workflows para rodar testes em push
 ```
 
-## Como executar o backend
+## Executar o backend
 
 ```bash
 cd backend
@@ -21,7 +33,7 @@ npm start
 
 Backend: http://localhost:3000
 
-## Como executar o frontend
+## Executar o frontend
 
 Em outro terminal:
 
@@ -33,7 +45,7 @@ npm start
 
 Frontend: http://localhost:8080
 
-## Como rodar os testes do backend
+## Rodar os testes do backend
 
 ```bash
 cd backend
@@ -41,9 +53,7 @@ npm install
 npm test
 ```
 
-## Como rodar os testes do frontend
-
-Com o backend livre na porta 3000:
+## Rodar os testes do frontend
 
 ```bash
 cd frontend
