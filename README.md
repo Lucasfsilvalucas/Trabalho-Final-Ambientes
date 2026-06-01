@@ -1,3 +1,8 @@
+**#Obs: **Pelo fato da aplicação inicial ser baseada em um trabalho de nuvem algumas das características da aplicação não funcinam sem um banco de dados para ascessar****
+
+
+
+
 # App Social
 
 Aplicação web com frontend em HTML, CSS e JavaScript, backend em JavaScript com ExpressJS, testes automatizados com Cypress e workflows do GitHub Actions.
