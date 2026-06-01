@@ -1,5 +1,5 @@
-**#Obs: **Pelo fato da aplicação inicial ser baseada em um trabalho de nuvem algumas das características da aplicação não funcinam sem um banco de dados para ascessar****
-
+**#Obs: **Pelo fato da aplicação inicial ser baseada em um trabalho de nuvem, algumas das características da aplicação não funcionam sem um banco de dados para ascessar.****
+**Obs2: **Eu deixei de ser preguiçoso e resolvi o app.****
 
 
 
