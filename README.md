@@ -1,29 +1,22 @@
-# App Social - Perfil
+**#Obs: **Pelo fato da aplicação inicial ser baseada em um trabalho de nuvem algumas das características da aplicação não funcinam sem um banco de dados para ascessar****
 
-Aplicação web simples com frontend em HTML, CSS e JavaScript, backend em JavaScript com ExpressJS, testes automatizados com Cypress e workflows do GitHub Actions.
 
-A aplicação não usa banco de dados. O frontend salva o perfil no `localStorage` do navegador e o backend Express mantém um perfil apenas em memória enquanto o servidor está rodando.
 
-## Funcionalidades
 
-- Criar uma página de perfil.
-- Informar nome, email e um resumo/post pessoal.
-- Visualizar a prévia do perfil na tela.
-- Limpar o perfil salvo no navegador.
-- Backend ExpressJS sem banco de dados.
-- Testes Cypress para frontend e backend.
-- Workflows GitHub Actions para frontend e backend.
+# App Social
+
+Aplicação web com frontend em HTML, CSS e JavaScript, backend em JavaScript com ExpressJS, testes automatizados com Cypress e workflows do GitHub Actions.
 
 ## Estrutura
 
 ```txt
 app-social-pronto/
 ├── frontend/              # HTML, CSS, JS e testes Cypress do frontend
-├── backend/               # ExpressJS sem banco e testes Cypress do backend
+├── backend/               # ExpressJS e testes Cypress do backend
 └── .github/workflows/     # Workflows para rodar testes em push
 ```
 
-## Executar o backend
+## Como executar o backend
 
 ```bash
 cd backend
@@ -33,7 +26,7 @@ npm start
 
 Backend: http://localhost:3000
 
-## Executar o frontend
+## Como executar o frontend
 
 Em outro terminal:
 
@@ -45,7 +38,7 @@ npm start
 
 Frontend: http://localhost:8080
 
-## Rodar os testes do backend
+## Como rodar os testes do backend
 
 ```bash
 cd backend
@@ -53,16 +46,12 @@ npm install
 npm test
 ```
 
-## Rodar os testes do frontend
+## Como rodar os testes do frontend
+
+Com o backend livre na porta 3000:
 
 ```bash
 cd frontend
 npm install
 npm test
 ```
-
-## GitHub
-
-Depois de subir para o GitHub, convide o professor pelo caminho:
-
-Settings > Collaborators > Add people > regis.simao@unifor.br
