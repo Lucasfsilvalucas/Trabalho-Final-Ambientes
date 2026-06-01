@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Social</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>App Social</h1>
+      <p class="subtitle">Aplicação com frontend, backend ExpressJS, Cypress e GitHub Actions.</p>
+    </section>
+
+    <section class="card">
+      <h2>Cadastrar perfil</h2>
+      <label for="regName">Nome</label>
+      <input id="regName" placeholder="Nome">
+
+      <label for="regEmail">Email</label>
+      <input id="regEmail" placeholder="Email">
+
+      <button id="registerBtn">Cadastrar</button>
+      <p id="registerMessage" class="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>Buscar perfil</h2>
+      <label for="profileId">ID do perfil</label>
+      <input id="profileId" type="number" value="1">
+      <button id="loadBtn">Carregar perfil</button>
+    </section>
+
+    <section class="card">
+      <h2>Perfil</h2>
+      <div id="profile" class="profile-box">Nenhum perfil carregado.</div>
+
+      <label for="newName">Novo nome</label>
+      <input id="newName" placeholder="Novo nome">
+      <button id="updateBtn">Atualizar</button>
+      <p id="updateMessage" class="message"></p>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

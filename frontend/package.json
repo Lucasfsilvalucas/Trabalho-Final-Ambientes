@@ -1,0 +1,16 @@
+{
+  "name": "app-social-frontend",
+  "version": "1.0.0",
+  "description": "Frontend HTML, CSS e JavaScript da aplicação App Social",
+  "type": "module",
+  "scripts": {
+    "start": "http-server . -p 8080 -c-1",
+    "test": "start-server-and-test start http://localhost:8080 cypress:run",
+    "cypress:run": "cypress run --e2e"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "http-server": "^14.1.1",
+    "start-server-and-test": "^2.0.8"
+  }
+}
