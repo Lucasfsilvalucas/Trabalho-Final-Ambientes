@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'appSocialProfile';
+const STORAGE_KEY = 'appSocialProfile'; 
 
 const nameInput = document.getElementById('nameInput');
 const emailInput = document.getElementById('emailInput');
